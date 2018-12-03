@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Document type %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%% Packages %%%%%
+%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,amssymb,amsthm,amsfonts,amsopn}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[hmargin={2.8cm, 2.8cm}, vmargin={3.8cm, 3.3cm}]{geometry}
+\usepackage[utf8]{inputenc}    % Danish letters
+%\usepackage[danish]{babel}    % Danish language
+\usepackage{booktabs}          % For tables
+\usepackage[pdftex]{graphicx}  % For '\includegraphics'
+\usepackage{float}             % Control placement of figures
+\usepackage[T1]{fontenc}       % Enable all characters
+\usepackage{lmodern}           % More beautiful text
+\usepackage[bottom]{footmisc}  % Put footnotes in bottom of page
+\usepackage{fancyref}          % For label prefixes
+\usepackage{mathrsfs}          % For \mathscr
+\usepackage{color}             % For link colors
+\usepackage{hyperref}          % For link colors & clickable urls
+\usepackage{blindtext}         % For \blindtext \Blindtext
+\usepackage[parfill]{parskip}  % no indent between paragrahs
+\usepackage{changepage}        % For \begin{adjustwidth}
+
+%%%%%%%%%%%%%%%%%%
+%%%%% Header %%%%%
+%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancypagestyle{normal}{
+\fancyhead{}                   % Clears header
+\lhead{\leftmark}              % Insert section in left side
+\cfoot{\thepage}               % page number in center
+}
+
+\fancypagestyle{nopagenumber}{
+\fancyhead{}                   % Clears header
+\lhead{\leftmark}              % Insert section in left side
+\fancyfoot{}                   % clear footer
+}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Front Page %%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[english, science, titlepage]{ku-frontpage} % KU
+\assignment{Master thesis}                             % ...
+\advisor{Supervisor: Rolf Poulsen}                     % ...
+\frontpageimage{images/frontpage.pdf}                           % ...
+\subtitle{A study of the Rough Bergomi model}
+
+\title{Rough Volatility}                               % Always
+\author{Aske Grønborg-Koch}                            % ...
+\date{Handed in: \today}                               % ...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Table of Contents %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{colorlinks, linkcolor=black} % link colors
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%% References %%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{natbib}                                         % For \citet
+\bibliographystyle{plainnat}                                % Style 
+\definecolor{linkblue}{rgb}{0, 0, 0.6}                      % Link colors
+\hypersetup{	colorlinks, citecolor=linkblue, urlcolor=black} % ... 
+
+%\bibliographystyle{plain}               % Alternative to above
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Appendices %%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[toc]{appendix}               % Appendix options: toc, page
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Compilation %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+% \includeonly{chapters/chapter1} % Compile only this file
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%% DOCUMENT %%%%%
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%% Front matter %%%
+\pagestyle{nopagenumber}            % No page numbers until chapters
+
+\maketitle                          % Frontpage
+\thispagestyle{empty}\pagebreak     % ... blank page
+\include{chapters/abstract}         % Abstract
+\thispagestyle{empty}\null\newpage  % ... blank page
+\tableofcontents                    % Table of Contents
+\newpage\null\thispagestyle{empty}  % ... blank page
+
+\pagebreak                          % Pagestyle and number applies from page 1
+\pagestyle{normal}                  % Page numbers from now on
+\setcounter{page}{1}                % start with page 1
+
+%%% Chapters %%%
+\include{chapters/chapter1}
+
+%%% Bibliography %%%
+\nocite{*}					% Include all references
+\bibliography{references}	% Insert references
+
+%%% Appendices %%%
+\begin{appendices}
+\include{chapters/appendixa}
+\end{appendices}
+
+\end{document}

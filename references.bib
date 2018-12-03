@@ -1,0 +1,135 @@
+% Encoding: UTF-8
+
+@Article{blackscholes1973,
+  author   = {Black, Fischer and Scholes, Myron},
+  title    = {The pricing of options and corporate liabilities},
+  journal  = {Journal of Political Economy},
+  year     = {1973},
+  volume   = {81},
+  number   = {3},
+  pages    = {637-54},
+  abstract = {If options are correctly priced in the market, it should not be possible to make sure profits by creating portfolios of long and short positions in options and their underlying stocks. Using this principle, a theoretical valuation formula for options is derived. Since almost all corporate liabilities can be viewed as combinations of options, the formula and the analysis that led to it are also applicable to corporate liabilities such as common stock, corporate bonds, and warrants. In particular, the formula can be used to derive the discount that should be applied to a corporate bond because of the possibility of default.},
+}
+
+@Article{hullwhite1987,
+  author   = {Hull, John C. and White, Alan},
+  title    = {The Pricing of Options on Assets with Stochastic Volatilities},
+  journal  = {Journal of Finance},
+  year     = {1987},
+  volume   = {42},
+  number   = {2},
+  pages    = {281-300},
+  abstract = {One option-pricing problem which has hitherto been unsolved is the pricing of European call on an asset which has a stochastic volatility. This paper examines this problem. The option price is determined in series form for the case in which the stochastic volatility is independent of the stock price. Numerical solutions are also produced for the case in which the volatility is correlated with the stock price. It is found that the Black-Scholes price frequently overprices options and that the degree of overpricing increases with the time to maturity. Copyright 1987 by American Finance Association.},
+}
+
+@Article{heston1993,
+  author   = {Heston, Steven L.},
+  title    = {A Closed-Form Solution for Options with Stochastic Volatility with Applications to Bond and Currency Options},
+  journal  = {Review of Financial Studies},
+  year     = {1993},
+  volume   = {6},
+  number   = {2},
+  pages    = {327-43},
+  abstract = {I use a new technique to derive a closed-form solution for the price of a European call option on an asset with stochastic volatility. The model allows arbitrary correlation between volatility and spot-asset returns. I introduce stochastic interest rates and show how to apply the model to bond options and foreign currency options. Simulations show that correlation between volatility and the spot asset's price is important for explaining return skewness and strike-price biases in the Black-Scholes (1973) model. The solution technique is based on characteristic functions and can be applied to other problems. Article published by Oxford University Press on behalf of the Society for Financial Studies in its journal, The Review of Financial Studies.},
+}
+
+@Article{coxrosscev1976,
+  author   = {Cox, John C. and Ross, Stephen},
+  title    = {The Valuation of Options for Alternative Stochastic Processes},
+  journal  = {Journal of Financial Economics},
+  year     = {1976},
+  volume   = {3},
+  number   = {1-2},
+  pages    = {145-166},
+  abstract = {This paper examines the structure of option valuation problems and develops a new technique for their solution. It also introduces several jump and diffusion processes which have not been used in previous models. The technique is applied to these processes to find explicit option valuation formulas, and solutions to some previously unsolved problems involving the pricing of securities with payouts and potential bankruptcy.},
+}
+
+@book{gatheral2006,
+author = {Gatheral, Jim},
+year = {2006},
+month = {01},
+pages = {},
+title = {The Volatility Surface: A Practitioner's Guide},
+publisher = {John Wiley \& Sons, Inc.}
+}
+
+@Article{gatheral2018,
+  author    = {Jim Gatheral and Thibault Jaisson and Mathieu Rosenbaum},
+  title     = {Volatility is rough},
+  journal   = {Quantitative Finance},
+  year      = {2018},
+  volume    = {18},
+  number    = {6},
+  pages     = {933-949},
+  abstract  = {Estimating volatility from recent high frequency data, we revisit the question of the smoothness of the volatility process. Our main result is that log-volatility behaves essentially as a fractional Brownian motion with Hurst exponent H of order 0.1, at any reasonable time scale. This leads us to adopt the fractional stochastic volatility (FSV) model of Comte and Renault. We call our model Rough FSV (RFSV) to underline that, in contrast to FSV, H<1/2. We demonstrate that our RFSV model is remarkably consistent with financial time series data; one application is that it enables us to obtain improved forecasts of realized volatility. Furthermore, we find that although volatility is not long memory in the RFSV model, classical statistical procedures aiming at detecting volatility persistence tend to conclude the presence of long memory in data generated from it. This sheds light on why long memory of volatility has been widely accepted as a stylized fact. Finally, we provide a quantitative market microstructure-based foundation for our findings, relating the roughness of volatility to high frequency trading and order splitting.},
+  eprint    = {https://doi.org/10.1080/14697688.2017.1393551},
+  publisher = {Routledge},
+}
+
+@Article{bayer2016,
+  author    = {Christian Bayer and Peter Friz and Jim Gatheral},
+  title     = {Pricing under rough volatility},
+  journal   = {Quantitative Finance},
+  year      = {2016},
+  volume    = {16},
+  number    = {6},
+  pages     = {887-904},
+  abstract  = {From an analysis of the time series of volatility using recent high frequency data, Gatheral, Jaisson and Rosenbaum previously showed that log-volatility behaves essentially as a fractional Brownian motion with Hurst exponent H of order 0.1, at any reasonable time scale. The resulting Rough Fractional Stochastic Volatility (RFSV) model is remarkably consistent with financial time series data. We now show how the RFSV model can be used to price claims on both the underlying and integrated volatility. We analyze in detail a simple case of this model, the rBergomi model. In particular, we find that the rBergomi model fits the SPX volatility markedly better than conventional Markovian stochastic volatility models, and with fewer parameters. Finally, we show that actual SPX variance swap curves seem to be consistent with model forecasts, with particular dramatic examples from the weekend of the collapse of Lehman Brothers and the Flash Crash.},
+  eprint    = {https://doi.org/10.1080/14697688.2015.1099717},
+  publisher = {Routledge},
+}
+
+@Article{bennedsen2017,
+  author        = {Bennedsen, M. and Lunde, A. and Pakkanen, M. S.},
+  title         = {Hybrid scheme for Brownian semistationary processes},
+  journal       = {ArXiv e-prints},
+  year          = {2017},
+  month         = jul,
+  abstract      = {We introduce a simulation scheme for Brownian semistationary processes, which is based on discretizing the stochastic integral representation of the process in the time domain. We assume that the kernel function of the process is regularly varying at zero. The novel feature of the scheme is to approximate the kernel function by a power function near zero and by a step function elsewhere. The resulting approximation of the process is a combination of Wiener integrals of the power function and a Riemann sum, which is why we call this method a hybrid scheme. Our main theoretical result describes the asymptotics of the mean square error of the hybrid scheme and we observe that the scheme leads to a substantial improvement of accuracy compared to the ordinary forward Riemann-sum scheme, while having the same computational complexity. We exemplify the use of the hybrid scheme by two numerical experiments, where we examine the finite-sample properties of an estimator of the roughness parameter of a Brownian semistationary process and study Monte Carlo option pricing in the rough Bergomi model of Bayer et al. [Quant. Finance 16(6), 887-904, 2016], respectively.},
+  adsnote       = {Provided by the SAO/NASA Astrophysics Data System},
+  archiveprefix = {arXiv},
+  eprint        = {1507.03004},
+  keywords      = {Mathematics - Probability, Quantitative Finance - Pricing of Securities, 60G12, 60G22, 65C20, 91G60, 62M09},
+  primaryclass  = {math.PR},
+}
+
+@Article{mccrickerdpakkanen2018,
+  author    = {Ryan McCrickerd and Mikko S. Pakkanen},
+  title     = {Turbocharging Monte Carlo pricing for the rough Bergomi model},
+  journal   = {Quantitative Finance},
+  year      = {2018},
+  volume    = {0},
+  number    = {0},
+  pages     = {1-10},
+  abstract  = { The rough Bergomi model, introduced by Bayer et al. [Quant. Finance, 2016, 16(6), 887–904], is one of the recent rough volatility models that are consistent with the stylised fact of implied volatility surfaces being essentially time-invariant, and are able to capture the term structure of skew observed in equity markets. In the absence of analytical European option pricing methods for the model, we focus on reducing the runtime-adjusted variance of Monte Carlo implied volatilities, thereby contributing to the model’s calibration by simulation. We employ a novel composition of variance reduction methods, immediately applicable to any conditionally log-normal stochastic volatility model. Assuming one targets implied volatility estimates with a given degree of confidence, thus calibration RMSE, the results we demonstrate equate to significant runtime reductions—roughly 20 times on average, across different correlation regimes. },
+  eprint    = {https://doi.org/10.1080/14697688.2018.1459812},
+  publisher = {Routledge},
+}
+
+@Misc{Roptim,
+  author       = {Kai Husmann and Alexander Lange},
+  title        = {optim},
+  howpublished = {\url{https://cran.r-project.org/web/packages/optimization/optimization.pdf}},
+  month        = oct,
+  year         = {2017},
+}
+
+@Article{lipton2002,
+  author  = {Lipton, Alexander},
+  title   = {{The Vol Smile Problem}},
+  journal = {Risk Magazine},
+  year    = {2002},
+}
+
+@article{fourierin2017,
+  author = {Guillermo Basulto-Elias and Alicia Carriquiry and Kris De
+          Brabanter and Daniel J. Nordman},
+  title = {{fourierin: An R package to compute Fourier integrals}},
+  year = {2017},
+  journal = {{The R Journal}},
+  url = {https://journal.r-project.org/archive/2017/RJ-2017-044/index.html},
+  pages = {72--83},
+  volume = {9},
+  number = {2}
+}
+@Comment{jabref-meta: databaseType:bibtex;}
